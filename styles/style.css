@@ -10,7 +10,7 @@ html {
 
 .page {
   margin: auto;
-  padding: 133px 30px;
+  padding: 0px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -239,13 +239,12 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
-  top: 3.2px;
-  left: 2px;
   display: block;
   width: 15px;
   height: 15px;
   background-color: #fff;
+  margin-top: 1.3px;
+  margin-left: 1.2px;
 }
 
 .search-form__label:hover .search-form__label-text {
