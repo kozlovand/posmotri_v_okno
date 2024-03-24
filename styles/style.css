@@ -53,7 +53,7 @@ ol {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 6px 0;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -91,7 +91,7 @@ ol {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 93%;
   text-transform: uppercase;
 }
 
@@ -111,11 +111,12 @@ ol {
 .result__video-container {
   position: relative;
   margin-bottom: 16px;
+  height: 386px;
 }
 
 .result__video {
   width: 711px;
-  height: 386px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -138,7 +139,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: 400;
   font-size: 18px;
 }
@@ -146,8 +147,8 @@ ol {
 .search-form__textfield {
   width: 100%;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   padding: 2.5px 0;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -162,15 +163,15 @@ ol {
 .search-form__textfield::placeholder {
   opacity: 0.7;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
 }
 
 .search-form__submit-button {
   align-self: end;
-  width: 194px;
-  height: 37px;
+  width: 195px;
+  height: 34px;
 }
 
 .content__card-link {
@@ -202,7 +203,6 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  flex-direction: row;
   gap: 15px;
 }
 
@@ -218,6 +218,8 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
+  text-underline-offset: 3px;
+  cursor: pointer;
 }
 
 .search-form__label:focus {
@@ -229,15 +231,12 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-}
-
-.search-form__label {
-  text-underline-offset: 3px;
-  cursor: pointer;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
@@ -245,8 +244,6 @@ ol {
   display: block;
   width: 15px;
   height: 15px;
-  margin-top: 1.3px;
-  margin-left: 1.2px;
   background-color: #fff;
 }
 
