@@ -9,15 +9,17 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  padding: 0px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  height: auto;
+
 }
 
 h1,
@@ -81,8 +83,7 @@ ol {
 }
 
 .content__details {
-  width: 100%;
-  height: 100%;
+  width: 399px;
 }
 
 .title {
@@ -99,6 +100,7 @@ ol {
 }
 
 .content__list-item {
+  max-width: 394px;
   margin-bottom: 30px;
 }
 
@@ -108,12 +110,12 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
   margin-bottom: 16px;
 }
 
 .result__video {
-  width: 100%;
+  width: 711px;
+  height: 386px;
   object-fit: cover;
   object-position: center;
 }
@@ -125,12 +127,14 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .content__video-card-description-container {
-  width: 100%;
+  width: 186px;
+  max-width: 200px;
 }
 
 .search-form__fieldset-title {
@@ -140,6 +144,7 @@ ol {
 }
 
 .search-form__textfield {
+  width: 100%;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -150,6 +155,8 @@ ol {
   font-size: 18px;
   line-height: 1.2;
   background-color: transparent;
+  cursor: pointer;
+  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -172,10 +179,13 @@ ol {
 }
 
 .content__video-card-title {
+  overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -198,12 +208,6 @@ ol {
 
 .search-form__fieldset:first-child {
   width: 225px;
-}
-
-.search-form__textfield {
-  width: 100%;
-  cursor: pointer;
-  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -232,7 +236,6 @@ ol {
 }
 
 .search-form__label {
-  position: relative;
   text-underline-offset: 3px;
   cursor: pointer;
 }
@@ -242,9 +245,9 @@ ol {
   display: block;
   width: 15px;
   height: 15px;
-  background-color: #fff;
   margin-top: 1.3px;
   margin-left: 1.2px;
+  background-color: #fff;
 }
 
 .search-form__label:hover .search-form__label-text {
